@@ -1,0 +1,53 @@
+@use 'colors';
+@use 'fonts';
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: colors.$color-white;
+    font-family: fonts.$font-primary, sans-serif;
+    font-size: 1rem;
+}
+
+a {
+    color: colors.$color-dark-blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: colors.$color-light-blue;
+    text-decoration: underline;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: fonts.$font-heading;
+    padding-top: 10px;
+}
+
+.navbar-brand {
+    font-family: fonts.$font-heading;
+}
+
+.navbar-light {
+    background-color: colors.$color-white;
+}
+
+.navbar-light .navbar-brand {
+    padding-right: 10px;
+    font-size: 2rem;
+    color: colors.$color-dark-blue;
+    &:hover {
+      color: colors.$color-light-blue;
+    }
+}
+
+.vspacer {
+    height: 50px;
+} 
+
+div.footer {
+    font-size: 0.8rem;
+    color: colors.$color-dark-gray;
+    border-top: 1px solid colors.$color-light-gray;
+    padding-top: 20px;
+}
